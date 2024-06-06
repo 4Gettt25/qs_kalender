@@ -29,6 +29,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'mycalendar',
     'widget_tweaks',
     'account',
     'django.contrib.admin',

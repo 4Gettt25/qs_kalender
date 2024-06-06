@@ -23,6 +23,7 @@ from Fallstudie_Calendar import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('account.urls')),
+    path('', include('mycalendar.urls')),
 ]
 
 if settings.DEBUG:
