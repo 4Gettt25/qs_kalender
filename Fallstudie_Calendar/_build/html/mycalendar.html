@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>mycalendar package &#8212; Fallstudie_Calendar 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <script src="_static/documentation_options.js?v=f2a433a1"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="mycalendar.migrations package" href="mycalendar.migrations.html" />
+    <link rel="prev" title="Welcome to Fallstudie_Calendar’s documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="mycalendar-package">
+<h1>mycalendar package<a class="headerlink" href="#mycalendar-package" title="Link to this heading">¶</a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Link to this heading">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="mycalendar.migrations.html">mycalendar.migrations package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="mycalendar.migrations.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mycalendar.migrations.html#module-mycalendar.migrations.0001_initial">mycalendar.migrations.0001_initial module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="mycalendar.migrations.html#mycalendar.migrations.0001_initial.Migration"><code class="docutils literal notranslate"><span class="pre">Migration</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="mycalendar.migrations.html#mycalendar.migrations.0001_initial.Migration.dependencies"><code class="docutils literal notranslate"><span class="pre">Migration.dependencies</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="mycalendar.migrations.html#mycalendar.migrations.0001_initial.Migration.initial"><code class="docutils literal notranslate"><span class="pre">Migration.initial</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="mycalendar.migrations.html#mycalendar.migrations.0001_initial.Migration.operations"><code class="docutils literal notranslate"><span class="pre">Migration.operations</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="mycalendar.migrations.html#module-mycalendar.migrations.0002_rename_calendar_id_event_calendar_and_more">mycalendar.migrations.0002_rename_calendar_id_event_calendar_and_more module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="mycalendar.migrations.html#mycalendar.migrations.0002_rename_calendar_id_event_calendar_and_more.Migration"><code class="docutils literal notranslate"><span class="pre">Migration</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="mycalendar.migrations.html#mycalendar.migrations.0002_rename_calendar_id_event_calendar_and_more.Migration.dependencies"><code class="docutils literal notranslate"><span class="pre">Migration.dependencies</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="mycalendar.migrations.html#mycalendar.migrations.0002_rename_calendar_id_event_calendar_and_more.Migration.operations"><code class="docutils literal notranslate"><span class="pre">Migration.operations</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="mycalendar.migrations.html#module-mycalendar.migrations">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-mycalendar.admin">
+<span id="mycalendar-admin-module"></span><h2>mycalendar.admin module<a class="headerlink" href="#module-mycalendar.admin" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-mycalendar.apps">
+<span id="mycalendar-apps-module"></span><h2>mycalendar.apps module<a class="headerlink" href="#module-mycalendar.apps" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="mycalendar.apps.MycalendarConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mycalendar.apps.</span></span><span class="sig-name descname"><span class="pre">MycalendarConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_module</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mycalendar/apps.html#MycalendarConfig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mycalendar.apps.MycalendarConfig" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">AppConfig</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.apps.MycalendarConfig.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'mycalendar'</span></em><a class="headerlink" href="#mycalendar.apps.MycalendarConfig.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-mycalendar.forms">
+<span id="mycalendar-forms-module"></span><h2>mycalendar.forms module<a class="headerlink" href="#module-mycalendar.forms" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="mycalendar.forms.CalendarEditForm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mycalendar.forms.</span></span><span class="sig-name descname"><span class="pre">CalendarEditForm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mycalendar/forms.html#CalendarEditForm"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mycalendar.forms.CalendarEditForm" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#mycalendar.forms.CalendarForm" title="mycalendar.forms.CalendarForm"><code class="xref py py-class docutils literal notranslate"><span class="pre">CalendarForm</span></code></a></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="mycalendar.forms.CalendarEditForm.Meta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="reference internal" href="_modules/mycalendar/forms.html#CalendarEditForm.Meta"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mycalendar.forms.CalendarEditForm.Meta" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.forms.CalendarEditForm.Meta.exclude">
+<span class="sig-name descname"><span class="pre">exclude</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">('visible_for',</span> <span class="pre">'editable_by')</span></em><a class="headerlink" href="#mycalendar.forms.CalendarEditForm.Meta.exclude" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.forms.CalendarEditForm.Meta.model">
+<span class="sig-name descname"><span class="pre">model</span></span><a class="headerlink" href="#mycalendar.forms.CalendarEditForm.Meta.model" title="Link to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#mycalendar.models.Calendar" title="mycalendar.models.Calendar"><code class="xref py py-class docutils literal notranslate"><span class="pre">Calendar</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.forms.CalendarEditForm.base_fields">
+<span class="sig-name descname"><span class="pre">base_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'calendar_id':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'editable_by':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'name':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'owner':</span> <span class="pre">&lt;django.forms.models.ModelChoiceField</span> <span class="pre">object&gt;,</span> <span class="pre">'visible_for':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;}</span></em><a class="headerlink" href="#mycalendar.forms.CalendarEditForm.base_fields" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.forms.CalendarEditForm.declared_fields">
+<span class="sig-name descname"><span class="pre">declared_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'calendar_id':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'editable_by':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'visible_for':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;}</span></em><a class="headerlink" href="#mycalendar.forms.CalendarEditForm.declared_fields" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="mycalendar.forms.CalendarEditForm.media">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">media</span></span><a class="headerlink" href="#mycalendar.forms.CalendarEditForm.media" title="Link to this definition">¶</a></dt>
+<dd><p>Return all media required to render the widgets on this form.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mycalendar.forms.CalendarEditForm.save">
+<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">commit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mycalendar/forms.html#CalendarEditForm.save"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mycalendar.forms.CalendarEditForm.save" title="Link to this definition">¶</a></dt>
+<dd><p>Save this form’s self.instance object if commit=True. Otherwise, add
+a save_m2m() method to the form which can be called after the instance
+is saved manually at a later time. Return the model instance.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="mycalendar.forms.CalendarForm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mycalendar.forms.</span></span><span class="sig-name descname"><span class="pre">CalendarForm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">files=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_id='id_%s'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error_class=&lt;class</span> <span class="pre">'django.forms.utils.ErrorList'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_suffix=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">empty_permitted=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_required_attribute=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">renderer=None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mycalendar/forms.html#CalendarForm"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mycalendar.forms.CalendarForm" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ModelForm</span></code></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="mycalendar.forms.CalendarForm.Meta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="reference internal" href="_modules/mycalendar/forms.html#CalendarForm.Meta"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mycalendar.forms.CalendarForm.Meta" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.forms.CalendarForm.Meta.exclude">
+<span class="sig-name descname"><span class="pre">exclude</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">('owner',</span> <span class="pre">'visible_for',</span> <span class="pre">'editable_by')</span></em><a class="headerlink" href="#mycalendar.forms.CalendarForm.Meta.exclude" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.forms.CalendarForm.Meta.model">
+<span class="sig-name descname"><span class="pre">model</span></span><a class="headerlink" href="#mycalendar.forms.CalendarForm.Meta.model" title="Link to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#mycalendar.models.Calendar" title="mycalendar.models.Calendar"><code class="xref py py-class docutils literal notranslate"><span class="pre">Calendar</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.forms.CalendarForm.base_fields">
+<span class="sig-name descname"><span class="pre">base_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'editable_by':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'name':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'visible_for':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;}</span></em><a class="headerlink" href="#mycalendar.forms.CalendarForm.base_fields" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.forms.CalendarForm.declared_fields">
+<span class="sig-name descname"><span class="pre">declared_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'editable_by':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'visible_for':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;}</span></em><a class="headerlink" href="#mycalendar.forms.CalendarForm.declared_fields" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="mycalendar.forms.CalendarForm.media">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">media</span></span><a class="headerlink" href="#mycalendar.forms.CalendarForm.media" title="Link to this definition">¶</a></dt>
+<dd><p>Return all media required to render the widgets on this form.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mycalendar.forms.CalendarForm.save">
+<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">commit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mycalendar/forms.html#CalendarForm.save"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mycalendar.forms.CalendarForm.save" title="Link to this definition">¶</a></dt>
+<dd><p>Save this form’s self.instance object if commit=True. Otherwise, add
+a save_m2m() method to the form which can be called after the instance
+is saved manually at a later time. Return the model instance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mycalendar.forms.CalendarForm.set_owner">
+<span class="sig-name descname"><span class="pre">set_owner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mycalendar/forms.html#CalendarForm.set_owner"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mycalendar.forms.CalendarForm.set_owner" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="mycalendar.forms.EventCreateForm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mycalendar.forms.</span></span><span class="sig-name descname"><span class="pre">EventCreateForm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">files=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_id='id_%s'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error_class=&lt;class</span> <span class="pre">'django.forms.utils.ErrorList'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_suffix=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">empty_permitted=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_required_attribute=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">renderer=None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mycalendar/forms.html#EventCreateForm"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mycalendar.forms.EventCreateForm" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ModelForm</span></code></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="mycalendar.forms.EventCreateForm.Meta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="reference internal" href="_modules/mycalendar/forms.html#EventCreateForm.Meta"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mycalendar.forms.EventCreateForm.Meta" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.forms.EventCreateForm.Meta.exclude">
+<span class="sig-name descname"><span class="pre">exclude</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">('calendar',)</span></em><a class="headerlink" href="#mycalendar.forms.EventCreateForm.Meta.exclude" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.forms.EventCreateForm.Meta.model">
+<span class="sig-name descname"><span class="pre">model</span></span><a class="headerlink" href="#mycalendar.forms.EventCreateForm.Meta.model" title="Link to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#mycalendar.models.Event" title="mycalendar.models.Event"><code class="xref py py-class docutils literal notranslate"><span class="pre">Event</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.forms.EventCreateForm.base_fields">
+<span class="sig-name descname"><span class="pre">base_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'end_date':</span> <span class="pre">&lt;django.forms.fields.DateTimeField</span> <span class="pre">object&gt;,</span> <span class="pre">'event_type':</span> <span class="pre">&lt;django.forms.fields.TypedChoiceField</span> <span class="pre">object&gt;,</span> <span class="pre">'name':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'start_date':</span> <span class="pre">&lt;django.forms.fields.DateTimeField</span> <span class="pre">object&gt;}</span></em><a class="headerlink" href="#mycalendar.forms.EventCreateForm.base_fields" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.forms.EventCreateForm.declared_fields">
+<span class="sig-name descname"><span class="pre">declared_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'end_date':</span> <span class="pre">&lt;django.forms.fields.DateTimeField</span> <span class="pre">object&gt;,</span> <span class="pre">'start_date':</span> <span class="pre">&lt;django.forms.fields.DateTimeField</span> <span class="pre">object&gt;}</span></em><a class="headerlink" href="#mycalendar.forms.EventCreateForm.declared_fields" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="mycalendar.forms.EventCreateForm.media">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">media</span></span><a class="headerlink" href="#mycalendar.forms.EventCreateForm.media" title="Link to this definition">¶</a></dt>
+<dd><p>Return all media required to render the widgets on this form.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mycalendar.forms.EventCreateForm.set_calendar">
+<span class="sig-name descname"><span class="pre">set_calendar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">calendar_id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mycalendar/forms.html#EventCreateForm.set_calendar"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mycalendar.forms.EventCreateForm.set_calendar" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="mycalendar.forms.EventEditForm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mycalendar.forms.</span></span><span class="sig-name descname"><span class="pre">EventEditForm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">files=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_id='id_%s'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error_class=&lt;class</span> <span class="pre">'django.forms.utils.ErrorList'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_suffix=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">empty_permitted=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_required_attribute=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">renderer=None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mycalendar/forms.html#EventEditForm"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mycalendar.forms.EventEditForm" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ModelForm</span></code></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="mycalendar.forms.EventEditForm.Meta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="reference internal" href="_modules/mycalendar/forms.html#EventEditForm.Meta"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mycalendar.forms.EventEditForm.Meta" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.forms.EventEditForm.Meta.exclude">
+<span class="sig-name descname"><span class="pre">exclude</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">('calendar',)</span></em><a class="headerlink" href="#mycalendar.forms.EventEditForm.Meta.exclude" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.forms.EventEditForm.Meta.model">
+<span class="sig-name descname"><span class="pre">model</span></span><a class="headerlink" href="#mycalendar.forms.EventEditForm.Meta.model" title="Link to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#mycalendar.models.Event" title="mycalendar.models.Event"><code class="xref py py-class docutils literal notranslate"><span class="pre">Event</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.forms.EventEditForm.base_fields">
+<span class="sig-name descname"><span class="pre">base_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'end_date':</span> <span class="pre">&lt;django.forms.fields.DateTimeField</span> <span class="pre">object&gt;,</span> <span class="pre">'event_id':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'event_type':</span> <span class="pre">&lt;django.forms.fields.TypedChoiceField</span> <span class="pre">object&gt;,</span> <span class="pre">'name':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'start_date':</span> <span class="pre">&lt;django.forms.fields.DateTimeField</span> <span class="pre">object&gt;}</span></em><a class="headerlink" href="#mycalendar.forms.EventEditForm.base_fields" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.forms.EventEditForm.declared_fields">
+<span class="sig-name descname"><span class="pre">declared_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'end_date':</span> <span class="pre">&lt;django.forms.fields.DateTimeField</span> <span class="pre">object&gt;,</span> <span class="pre">'event_id':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'start_date':</span> <span class="pre">&lt;django.forms.fields.DateTimeField</span> <span class="pre">object&gt;}</span></em><a class="headerlink" href="#mycalendar.forms.EventEditForm.declared_fields" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="mycalendar.forms.EventEditForm.media">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">media</span></span><a class="headerlink" href="#mycalendar.forms.EventEditForm.media" title="Link to this definition">¶</a></dt>
+<dd><p>Return all media required to render the widgets on this form.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mycalendar.forms.EventEditForm.save">
+<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">commit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mycalendar/forms.html#EventEditForm.save"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mycalendar.forms.EventEditForm.save" title="Link to this definition">¶</a></dt>
+<dd><p>Save this form’s self.instance object if commit=True. Otherwise, add
+a save_m2m() method to the form which can be called after the instance
+is saved manually at a later time. Return the model instance.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mycalendar.forms.get_calendars">
+<span class="sig-prename descclassname"><span class="pre">mycalendar.forms.</span></span><span class="sig-name descname"><span class="pre">get_calendars</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mycalendar/forms.html#get_calendars"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mycalendar.forms.get_calendars" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-mycalendar.models">
+<span id="mycalendar-models-module"></span><h2>mycalendar.models module<a class="headerlink" href="#module-mycalendar.models" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="mycalendar.models.Calendar">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mycalendar.models.</span></span><span class="sig-name descname"><span class="pre">Calendar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">calendar_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">owner</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mycalendar/models.html#Calendar"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mycalendar.models.Calendar" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></p>
+<dl class="py exception">
+<dt class="sig sig-object py" id="mycalendar.models.Calendar.DoesNotExist">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#mycalendar.models.Calendar.DoesNotExist" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="mycalendar.models.Calendar.MultipleObjectsReturned">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#mycalendar.models.Calendar.MultipleObjectsReturned" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.models.Calendar.calendar_id">
+<span class="sig-name descname"><span class="pre">calendar_id</span></span><a class="headerlink" href="#mycalendar.models.Calendar.calendar_id" title="Link to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.models.Calendar.editable_by">
+<span class="sig-name descname"><span class="pre">editable_by</span></span><a class="headerlink" href="#mycalendar.models.Calendar.editable_by" title="Link to this definition">¶</a></dt>
+<dd><p>Accessor to the related objects manager on the forward and reverse sides of
+a many-to-many relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Pizza</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">toppings</span> <span class="o">=</span> <span class="n">ManyToManyField</span><span class="p">(</span><span class="n">Topping</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;pizzas&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Pizza.toppings</span></code> and <code class="docutils literal notranslate"><span class="pre">Topping.pizzas</span></code> are <code class="docutils literal notranslate"><span class="pre">ManyToManyDescriptor</span></code>
+instances.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal notranslate"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.models.Calendar.event_set">
+<span class="sig-name descname"><span class="pre">event_set</span></span><a class="headerlink" href="#mycalendar.models.Calendar.event_set" title="Link to this definition">¶</a></dt>
+<dd><p>Accessor to the related objects manager on the reverse side of a
+many-to-one relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Parent.children</span></code> is a <code class="docutils literal notranslate"><span class="pre">ReverseManyToOneDescriptor</span></code> instance.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal notranslate"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.models.Calendar.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#mycalendar.models.Calendar.name" title="Link to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.models.Calendar.objects">
+<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;django.db.models.manager.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#mycalendar.models.Calendar.objects" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.models.Calendar.owner">
+<span class="sig-name descname"><span class="pre">owner</span></span><a class="headerlink" href="#mycalendar.models.Calendar.owner" title="Link to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.models.Calendar.owner_id">
+<span class="sig-name descname"><span class="pre">owner_id</span></span><a class="headerlink" href="#mycalendar.models.Calendar.owner_id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.models.Calendar.visible_for">
+<span class="sig-name descname"><span class="pre">visible_for</span></span><a class="headerlink" href="#mycalendar.models.Calendar.visible_for" title="Link to this definition">¶</a></dt>
+<dd><p>Accessor to the related objects manager on the forward and reverse sides of
+a many-to-many relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Pizza</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">toppings</span> <span class="o">=</span> <span class="n">ManyToManyField</span><span class="p">(</span><span class="n">Topping</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;pizzas&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Pizza.toppings</span></code> and <code class="docutils literal notranslate"><span class="pre">Topping.pizzas</span></code> are <code class="docutils literal notranslate"><span class="pre">ManyToManyDescriptor</span></code>
+instances.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal notranslate"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="mycalendar.models.Event">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mycalendar.models.</span></span><span class="sig-name descname"><span class="pre">Event</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calendar</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">event_type</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mycalendar/models.html#Event"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mycalendar.models.Event" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></p>
+<dl class="py exception">
+<dt class="sig sig-object py" id="mycalendar.models.Event.DoesNotExist">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#mycalendar.models.Event.DoesNotExist" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="mycalendar.models.Event.MultipleObjectsReturned">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#mycalendar.models.Event.MultipleObjectsReturned" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.models.Event.TYPE_CHOICES">
+<span class="sig-name descname"><span class="pre">TYPE_CHOICES</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('AR',</span> <span class="pre">'Arbeit'),</span> <span class="pre">('FR',</span> <span class="pre">'Freizeit')]</span></em><a class="headerlink" href="#mycalendar.models.Event.TYPE_CHOICES" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.models.Event.calendar">
+<span class="sig-name descname"><span class="pre">calendar</span></span><a class="headerlink" href="#mycalendar.models.Event.calendar" title="Link to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.models.Event.calendar_id">
+<span class="sig-name descname"><span class="pre">calendar_id</span></span><a class="headerlink" href="#mycalendar.models.Event.calendar_id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.models.Event.end_date">
+<span class="sig-name descname"><span class="pre">end_date</span></span><a class="headerlink" href="#mycalendar.models.Event.end_date" title="Link to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.models.Event.event_id">
+<span class="sig-name descname"><span class="pre">event_id</span></span><a class="headerlink" href="#mycalendar.models.Event.event_id" title="Link to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.models.Event.event_type">
+<span class="sig-name descname"><span class="pre">event_type</span></span><a class="headerlink" href="#mycalendar.models.Event.event_type" title="Link to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mycalendar.models.Event.get_event_type_display">
+<span class="sig-name descname"><span class="pre">get_event_type_display</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.fields.CharField:</span> <span class="pre">event_type&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mycalendar.models.Event.get_event_type_display" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mycalendar.models.Event.get_next_by_start_date">
+<span class="sig-name descname"><span class="pre">get_next_by_start_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">start_date&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mycalendar.models.Event.get_next_by_start_date" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mycalendar.models.Event.get_previous_by_start_date">
+<span class="sig-name descname"><span class="pre">get_previous_by_start_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">start_date&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mycalendar.models.Event.get_previous_by_start_date" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.models.Event.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#mycalendar.models.Event.name" title="Link to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.models.Event.objects">
+<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;django.db.models.manager.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#mycalendar.models.Event.objects" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.models.Event.start_date">
+<span class="sig-name descname"><span class="pre">start_date</span></span><a class="headerlink" href="#mycalendar.models.Event.start_date" title="Link to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-mycalendar.serializers">
+<span id="mycalendar-serializers-module"></span><h2>mycalendar.serializers module<a class="headerlink" href="#module-mycalendar.serializers" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="mycalendar.serializers.CalendarSerializer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mycalendar.serializers.</span></span><span class="sig-name descname"><span class="pre">CalendarSerializer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mycalendar/serializers.html#CalendarSerializer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mycalendar.serializers.CalendarSerializer" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ModelSerializer</span></code></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="mycalendar.serializers.CalendarSerializer.Meta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="reference internal" href="_modules/mycalendar/serializers.html#CalendarSerializer.Meta"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mycalendar.serializers.CalendarSerializer.Meta" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.serializers.CalendarSerializer.Meta.exclude">
+<span class="sig-name descname"><span class="pre">exclude</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">('owner',)</span></em><a class="headerlink" href="#mycalendar.serializers.CalendarSerializer.Meta.exclude" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.serializers.CalendarSerializer.Meta.model">
+<span class="sig-name descname"><span class="pre">model</span></span><a class="headerlink" href="#mycalendar.serializers.CalendarSerializer.Meta.model" title="Link to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#mycalendar.models.Calendar" title="mycalendar.models.Calendar"><code class="xref py py-class docutils literal notranslate"><span class="pre">Calendar</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mycalendar.serializers.CalendarSerializer.get_editable_by">
+<span class="sig-name descname"><span class="pre">get_editable_by</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mycalendar/serializers.html#CalendarSerializer.get_editable_by"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mycalendar.serializers.CalendarSerializer.get_editable_by" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mycalendar.serializers.CalendarSerializer.get_visible_for">
+<span class="sig-name descname"><span class="pre">get_visible_for</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mycalendar/serializers.html#CalendarSerializer.get_visible_for"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mycalendar.serializers.CalendarSerializer.get_visible_for" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="mycalendar.serializers.EventSerializer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mycalendar.serializers.</span></span><span class="sig-name descname"><span class="pre">EventSerializer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mycalendar/serializers.html#EventSerializer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mycalendar.serializers.EventSerializer" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ModelSerializer</span></code></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="mycalendar.serializers.EventSerializer.Meta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="reference internal" href="_modules/mycalendar/serializers.html#EventSerializer.Meta"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mycalendar.serializers.EventSerializer.Meta" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.serializers.EventSerializer.Meta.fields">
+<span class="sig-name descname"><span class="pre">fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">('title',</span> <span class="pre">'start',</span> <span class="pre">'end',</span> <span class="pre">'icon',</span> <span class="pre">'event_id',</span> <span class="pre">'event_type')</span></em><a class="headerlink" href="#mycalendar.serializers.EventSerializer.Meta.fields" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mycalendar.serializers.EventSerializer.Meta.model">
+<span class="sig-name descname"><span class="pre">model</span></span><a class="headerlink" href="#mycalendar.serializers.EventSerializer.Meta.model" title="Link to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#mycalendar.models.Event" title="mycalendar.models.Event"><code class="xref py py-class docutils literal notranslate"><span class="pre">Event</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mycalendar.serializers.EventSerializer.get_end">
+<span class="sig-name descname"><span class="pre">get_end</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mycalendar/serializers.html#EventSerializer.get_end"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mycalendar.serializers.EventSerializer.get_end" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mycalendar.serializers.EventSerializer.get_icon">
+<span class="sig-name descname"><span class="pre">get_icon</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mycalendar/serializers.html#EventSerializer.get_icon"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mycalendar.serializers.EventSerializer.get_icon" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mycalendar.serializers.EventSerializer.get_start">
+<span class="sig-name descname"><span class="pre">get_start</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mycalendar/serializers.html#EventSerializer.get_start"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mycalendar.serializers.EventSerializer.get_start" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mycalendar.serializers.EventSerializer.get_title">
+<span class="sig-name descname"><span class="pre">get_title</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mycalendar/serializers.html#EventSerializer.get_title"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mycalendar.serializers.EventSerializer.get_title" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-mycalendar.tests">
+<span id="mycalendar-tests-module"></span><h2>mycalendar.tests module<a class="headerlink" href="#module-mycalendar.tests" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-mycalendar.urls">
+<span id="mycalendar-urls-module"></span><h2>mycalendar.urls module<a class="headerlink" href="#module-mycalendar.urls" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="mycalendar.urls.some_function">
+<span class="sig-prename descclassname"><span class="pre">mycalendar.urls.</span></span><span class="sig-name descname"><span class="pre">some_function</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/mycalendar/urls.html#some_function"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mycalendar.urls.some_function" title="Link to this definition">¶</a></dt>
+<dd><p>URL configuration for Fallstudie_Calendar project.</p>
+<dl class="simple">
+<dt>The <cite>urlpatterns</cite> list routes URLs to views. For more information please see:</dt><dd><p><a class="reference external" href="https://docs.djangoproject.com/en/5.0/topics/http/urls/">https://docs.djangoproject.com/en/5.0/topics/http/urls/</a></p>
+</dd>
+</dl>
+<p>Examples:
+Function views</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Add an import:  from my_app import views</p></li>
+<li><p>Add a URL to urlpatterns:  path(‘’, views.home, name=’home’)</p></li>
+</ol>
+</div></blockquote>
+<dl class="simple">
+<dt>Class-based views</dt><dd><ol class="arabic simple">
+<li><p>Add an import:  from other_app.views import Home</p></li>
+<li><p>Add a URL to urlpatterns:  path(‘’, Home.as_view(), name=’home’)</p></li>
+</ol>
+</dd>
+<dt>Including another URLconf</dt><dd><ol class="arabic simple">
+<li><p>Import the include() function: from django.urls import include, path</p></li>
+<li><p>Add a URL to urlpatterns:  path(‘blog/’, include(‘blog.urls’))</p></li>
+</ol>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-mycalendar.views">
+<span id="mycalendar-views-module"></span><h2>mycalendar.views module<a class="headerlink" href="#module-mycalendar.views" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="mycalendar.views.getEventsForCalender">
+<span class="sig-prename descclassname"><span class="pre">mycalendar.views.</span></span><span class="sig-name descname"><span class="pre">getEventsForCalender</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">selected_calendar</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mycalendar/views.html#getEventsForCalender"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mycalendar.views.getEventsForCalender" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mycalendar.views.homeView">
+<span class="sig-prename descclassname"><span class="pre">mycalendar.views.</span></span><span class="sig-name descname"><span class="pre">homeView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mycalendar/views.html#homeView"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mycalendar.views.homeView" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-mycalendar">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-mycalendar" title="Link to this heading">¶</a></h2>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Fallstudie_Calendar</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">mycalendar package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-mycalendar.admin">mycalendar.admin module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-mycalendar.apps">mycalendar.apps module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-mycalendar.forms">mycalendar.forms module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-mycalendar.models">mycalendar.models module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-mycalendar.serializers">mycalendar.serializers module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-mycalendar.tests">mycalendar.tests module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-mycalendar.urls">mycalendar.urls module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-mycalendar.views">mycalendar.views module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-mycalendar">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="account.html">account package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Fallstudie_Calendar.html">Fallstudie_Calendar package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">mycalendar</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to Fallstudie_Calendar’s documentation!</a></li>
+      <li>Next: <a href="mycalendar.migrations.html" title="next chapter">mycalendar.migrations package</a></li>
+  </ul></li>
+</ul>
+</div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, Felix Günther.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.3.7</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+      |
+      <a href="_sources/mycalendar.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
