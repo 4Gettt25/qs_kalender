@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.11 (Fallstudie_Calendar)" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (qs_kalender)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (ToDO-Liste)" project-jdk-type="Python SDK" />
 </project>
