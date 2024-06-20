@@ -1,0 +1,65 @@
+\indexentry{module@\spxentry{module}!todo.migrations.0001\_initial@\spxentry{todo.migrations.0001\_initial}|hyperpage}{1}
+\indexentry{todo.migrations.0001\_initial@\spxentry{todo.migrations.0001\_initial}!module@\spxentry{module}|hyperpage}{1}
+\indexentry{Migration (class in todo.migrations.0001\_initial)@\spxentry{Migration}\spxextra{class in todo.migrations.0001\_initial}|hyperpage}{1}
+\indexentry{dependencies (todo.migrations.0001\_initial.Migration attribute)@\spxentry{dependencies}\spxextra{todo.migrations.0001\_initial.Migration attribute}|hyperpage}{1}
+\indexentry{initial (todo.migrations.0001\_initial.Migration attribute)@\spxentry{initial}\spxextra{todo.migrations.0001\_initial.Migration attribute}|hyperpage}{1}
+\indexentry{operations (todo.migrations.0001\_initial.Migration attribute)@\spxentry{operations}\spxextra{todo.migrations.0001\_initial.Migration attribute}|hyperpage}{1}
+\indexentry{module@\spxentry{module}!todo.migrations.0002\_alter\_task\_options@\spxentry{todo.migrations.0002\_alter\_task\_options}|hyperpage}{1}
+\indexentry{todo.migrations.0002\_alter\_task\_options@\spxentry{todo.migrations.0002\_alter\_task\_options}!module@\spxentry{module}|hyperpage}{1}
+\indexentry{Migration (class in todo.migrations.0002\_alter\_task\_options)@\spxentry{Migration}\spxextra{class in todo.migrations.0002\_alter\_task\_options}|hyperpage}{1}
+\indexentry{dependencies (todo.migrations.0002\_alter\_task\_options.Migration attribute)@\spxentry{dependencies}\spxextra{todo.migrations.0002\_alter\_task\_options.Migration attribute}|hyperpage}{1}
+\indexentry{operations (todo.migrations.0002\_alter\_task\_options.Migration attribute)@\spxentry{operations}\spxextra{todo.migrations.0002\_alter\_task\_options.Migration attribute}|hyperpage}{1}
+\indexentry{module@\spxentry{module}!todo.migrations@\spxentry{todo.migrations}|hyperpage}{2}
+\indexentry{todo.migrations@\spxentry{todo.migrations}!module@\spxentry{module}|hyperpage}{2}
+\indexentry{module@\spxentry{module}!todo.admin@\spxentry{todo.admin}|hyperpage}{2}
+\indexentry{todo.admin@\spxentry{todo.admin}!module@\spxentry{module}|hyperpage}{2}
+\indexentry{module@\spxentry{module}!todo.apps@\spxentry{todo.apps}|hyperpage}{2}
+\indexentry{todo.apps@\spxentry{todo.apps}!module@\spxentry{module}|hyperpage}{2}
+\indexentry{TodoConfig (class in todo.apps)@\spxentry{TodoConfig}\spxextra{class in todo.apps}|hyperpage}{2}
+\indexentry{default\_auto\_field (todo.apps.TodoConfig attribute)@\spxentry{default\_auto\_field}\spxextra{todo.apps.TodoConfig attribute}|hyperpage}{2}
+\indexentry{name (todo.apps.TodoConfig attribute)@\spxentry{name}\spxextra{todo.apps.TodoConfig attribute}|hyperpage}{2}
+\indexentry{module@\spxentry{module}!todo.models@\spxentry{todo.models}|hyperpage}{2}
+\indexentry{todo.models@\spxentry{todo.models}!module@\spxentry{module}|hyperpage}{2}
+\indexentry{Task (class in todo.models)@\spxentry{Task}\spxextra{class in todo.models}|hyperpage}{2}
+\indexentry{Task.DoesNotExist@\spxentry{Task.DoesNotExist}|hyperpage}{2}
+\indexentry{Task.MultipleObjectsReturned@\spxentry{Task.MultipleObjectsReturned}|hyperpage}{2}
+\indexentry{completed (todo.models.Task attribute)@\spxentry{completed}\spxextra{todo.models.Task attribute}|hyperpage}{2}
+\indexentry{created (todo.models.Task attribute)@\spxentry{created}\spxextra{todo.models.Task attribute}|hyperpage}{2}
+\indexentry{description (todo.models.Task attribute)@\spxentry{description}\spxextra{todo.models.Task attribute}|hyperpage}{2}
+\indexentry{get\_next\_by\_created() (todo.models.Task method)@\spxentry{get\_next\_by\_created()}\spxextra{todo.models.Task method}|hyperpage}{2}
+\indexentry{get\_previous\_by\_created() (todo.models.Task method)@\spxentry{get\_previous\_by\_created()}\spxextra{todo.models.Task method}|hyperpage}{2}
+\indexentry{id (todo.models.Task attribute)@\spxentry{id}\spxextra{todo.models.Task attribute}|hyperpage}{2}
+\indexentry{objects (todo.models.Task attribute)@\spxentry{objects}\spxextra{todo.models.Task attribute}|hyperpage}{2}
+\indexentry{title (todo.models.Task attribute)@\spxentry{title}\spxextra{todo.models.Task attribute}|hyperpage}{2}
+\indexentry{user (todo.models.Task attribute)@\spxentry{user}\spxextra{todo.models.Task attribute}|hyperpage}{3}
+\indexentry{user\_id (todo.models.Task attribute)@\spxentry{user\_id}\spxextra{todo.models.Task attribute}|hyperpage}{3}
+\indexentry{module@\spxentry{module}!todo.tests@\spxentry{todo.tests}|hyperpage}{3}
+\indexentry{todo.tests@\spxentry{todo.tests}!module@\spxentry{module}|hyperpage}{3}
+\indexentry{module@\spxentry{module}!todo.urls@\spxentry{todo.urls}|hyperpage}{3}
+\indexentry{todo.urls@\spxentry{todo.urls}!module@\spxentry{module}|hyperpage}{3}
+\indexentry{module@\spxentry{module}!todo.views@\spxentry{todo.views}|hyperpage}{3}
+\indexentry{todo.views@\spxentry{todo.views}!module@\spxentry{module}|hyperpage}{3}
+\indexentry{TaskCreateView (class in todo.views)@\spxentry{TaskCreateView}\spxextra{class in todo.views}|hyperpage}{3}
+\indexentry{fields (todo.views.TaskCreateView attribute)@\spxentry{fields}\spxextra{todo.views.TaskCreateView attribute}|hyperpage}{3}
+\indexentry{model (todo.views.TaskCreateView attribute)@\spxentry{model}\spxextra{todo.views.TaskCreateView attribute}|hyperpage}{3}
+\indexentry{success\_url (todo.views.TaskCreateView attribute)@\spxentry{success\_url}\spxextra{todo.views.TaskCreateView attribute}|hyperpage}{3}
+\indexentry{TaskDetail (class in todo.views)@\spxentry{TaskDetail}\spxextra{class in todo.views}|hyperpage}{3}
+\indexentry{context\_object\_name (todo.views.TaskDetail attribute)@\spxentry{context\_object\_name}\spxextra{todo.views.TaskDetail attribute}|hyperpage}{3}
+\indexentry{model (todo.views.TaskDetail attribute)@\spxentry{model}\spxextra{todo.views.TaskDetail attribute}|hyperpage}{3}
+\indexentry{template\_name (todo.views.TaskDetail attribute)@\spxentry{template\_name}\spxextra{todo.views.TaskDetail attribute}|hyperpage}{3}
+\indexentry{TaskListView (class in todo.views)@\spxentry{TaskListView}\spxextra{class in todo.views}|hyperpage}{3}
+\indexentry{context\_object\_name (todo.views.TaskListView attribute)@\spxentry{context\_object\_name}\spxextra{todo.views.TaskListView attribute}|hyperpage}{3}
+\indexentry{model (todo.views.TaskListView attribute)@\spxentry{model}\spxextra{todo.views.TaskListView attribute}|hyperpage}{3}
+\indexentry{module@\spxentry{module}!todo@\spxentry{todo}|hyperpage}{4}
+\indexentry{todo@\spxentry{todo}!module@\spxentry{module}|hyperpage}{4}
+\indexentry{module@\spxentry{module}!todolist.asgi@\spxentry{todolist.asgi}|hyperpage}{5}
+\indexentry{todolist.asgi@\spxentry{todolist.asgi}!module@\spxentry{module}|hyperpage}{5}
+\indexentry{module@\spxentry{module}!todolist.settings@\spxentry{todolist.settings}|hyperpage}{5}
+\indexentry{todolist.settings@\spxentry{todolist.settings}!module@\spxentry{module}|hyperpage}{5}
+\indexentry{module@\spxentry{module}!todolist.urls@\spxentry{todolist.urls}|hyperpage}{5}
+\indexentry{todolist.urls@\spxentry{todolist.urls}!module@\spxentry{module}|hyperpage}{5}
+\indexentry{some\_func() (in module todolist.urls)@\spxentry{some\_func()}\spxextra{in module todolist.urls}|hyperpage}{5}
+\indexentry{module@\spxentry{module}!todolist.wsgi@\spxentry{todolist.wsgi}|hyperpage}{6}
+\indexentry{todolist.wsgi@\spxentry{todolist.wsgi}!module@\spxentry{module}|hyperpage}{6}
+\indexentry{module@\spxentry{module}!todolist@\spxentry{todolist}|hyperpage}{6}
+\indexentry{todolist@\spxentry{todolist}!module@\spxentry{module}|hyperpage}{6}

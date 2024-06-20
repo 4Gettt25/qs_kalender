@@ -1,0 +1,126 @@
+\begin{sphinxtheindex}
+\let\bigletter\sphinxstyleindexlettergroup
+\let\spxpagem \sphinxstyleindexpagemain
+\let\spxentry \sphinxstyleindexentry
+\let\spxextra \sphinxstyleindexextra
+
+  \bigletter C
+  \item \spxentry{completed}\spxextra{todo.models.Task attribute}, \hyperpage{2}
+  \item \spxentry{context\_object\_name}\spxextra{todo.views.TaskDetail attribute}, \hyperpage{3}
+  \item \spxentry{context\_object\_name}\spxextra{todo.views.TaskListView attribute}, \hyperpage{3}
+  \item \spxentry{created}\spxextra{todo.models.Task attribute}, \hyperpage{2}
+
+  \indexspace
+  \bigletter D
+  \item \spxentry{default\_auto\_field}\spxextra{todo.apps.TodoConfig attribute}, \hyperpage{2}
+  \item \spxentry{dependencies}\spxextra{todo.migrations.0001\_initial.Migration attribute}, 
+		\hyperpage{1}
+  \item \spxentry{dependencies}\spxextra{todo.migrations.0002\_alter\_task\_options.Migration attribute}, 
+		\hyperpage{1}
+  \item \spxentry{description}\spxextra{todo.models.Task attribute}, \hyperpage{2}
+
+  \indexspace
+  \bigletter F
+  \item \spxentry{fields}\spxextra{todo.views.TaskCreateView attribute}, \hyperpage{3}
+
+  \indexspace
+  \bigletter G
+  \item \spxentry{get\_next\_by\_created()}\spxextra{todo.models.Task method}, \hyperpage{2}
+  \item \spxentry{get\_previous\_by\_created()}\spxextra{todo.models.Task method}, \hyperpage{2}
+
+  \indexspace
+  \bigletter I
+  \item \spxentry{id}\spxextra{todo.models.Task attribute}, \hyperpage{2}
+  \item \spxentry{initial}\spxextra{todo.migrations.0001\_initial.Migration attribute}, 
+		\hyperpage{1}
+
+  \indexspace
+  \bigletter M
+  \item \spxentry{Migration}\spxextra{class in todo.migrations.0001\_initial}, \hyperpage{1}
+  \item \spxentry{Migration}\spxextra{class in todo.migrations.0002\_alter\_task\_options}, 
+		\hyperpage{1}
+  \item \spxentry{model}\spxextra{todo.views.TaskCreateView attribute}, \hyperpage{3}
+  \item \spxentry{model}\spxextra{todo.views.TaskDetail attribute}, \hyperpage{3}
+  \item \spxentry{model}\spxextra{todo.views.TaskListView attribute}, \hyperpage{3}
+  \item \spxentry{module}
+    \subitem \spxentry{todo}, \hyperpage{4}
+    \subitem \spxentry{todo.admin}, \hyperpage{2}
+    \subitem \spxentry{todo.apps}, \hyperpage{2}
+    \subitem \spxentry{todo.migrations}, \hyperpage{2}
+    \subitem \spxentry{todo.migrations.0001\_initial}, \hyperpage{1}
+    \subitem \spxentry{todo.migrations.0002\_alter\_task\_options}, \hyperpage{1}
+    \subitem \spxentry{todo.models}, \hyperpage{2}
+    \subitem \spxentry{todo.tests}, \hyperpage{3}
+    \subitem \spxentry{todo.urls}, \hyperpage{3}
+    \subitem \spxentry{todo.views}, \hyperpage{3}
+    \subitem \spxentry{todolist}, \hyperpage{6}
+    \subitem \spxentry{todolist.asgi}, \hyperpage{5}
+    \subitem \spxentry{todolist.settings}, \hyperpage{5}
+    \subitem \spxentry{todolist.urls}, \hyperpage{5}
+    \subitem \spxentry{todolist.wsgi}, \hyperpage{6}
+
+  \indexspace
+  \bigletter N
+  \item \spxentry{name}\spxextra{todo.apps.TodoConfig attribute}, \hyperpage{2}
+
+  \indexspace
+  \bigletter O
+  \item \spxentry{objects}\spxextra{todo.models.Task attribute}, \hyperpage{2}
+  \item \spxentry{operations}\spxextra{todo.migrations.0001\_initial.Migration attribute}, 
+		\hyperpage{1}
+  \item \spxentry{operations}\spxextra{todo.migrations.0002\_alter\_task\_options.Migration attribute}, 
+		\hyperpage{1}
+
+  \indexspace
+  \bigletter S
+  \item \spxentry{some\_func()}\spxextra{in module todolist.urls}, \hyperpage{5}
+  \item \spxentry{success\_url}\spxextra{todo.views.TaskCreateView attribute}, \hyperpage{3}
+
+  \indexspace
+  \bigletter T
+  \item \spxentry{Task}\spxextra{class in todo.models}, \hyperpage{2}
+  \item \spxentry{Task.DoesNotExist}, \hyperpage{2}
+  \item \spxentry{Task.MultipleObjectsReturned}, \hyperpage{2}
+  \item \spxentry{TaskCreateView}\spxextra{class in todo.views}, \hyperpage{3}
+  \item \spxentry{TaskDetail}\spxextra{class in todo.views}, \hyperpage{3}
+  \item \spxentry{TaskListView}\spxextra{class in todo.views}, \hyperpage{3}
+  \item \spxentry{template\_name}\spxextra{todo.views.TaskDetail attribute}, \hyperpage{3}
+  \item \spxentry{title}\spxextra{todo.models.Task attribute}, \hyperpage{2}
+  \item \spxentry{todo}
+    \subitem \spxentry{module}, \hyperpage{4}
+  \item \spxentry{todo.admin}
+    \subitem \spxentry{module}, \hyperpage{2}
+  \item \spxentry{todo.apps}
+    \subitem \spxentry{module}, \hyperpage{2}
+  \item \spxentry{todo.migrations}
+    \subitem \spxentry{module}, \hyperpage{2}
+  \item \spxentry{todo.migrations.0001\_initial}
+    \subitem \spxentry{module}, \hyperpage{1}
+  \item \spxentry{todo.migrations.0002\_alter\_task\_options}
+    \subitem \spxentry{module}, \hyperpage{1}
+  \item \spxentry{todo.models}
+    \subitem \spxentry{module}, \hyperpage{2}
+  \item \spxentry{todo.tests}
+    \subitem \spxentry{module}, \hyperpage{3}
+  \item \spxentry{todo.urls}
+    \subitem \spxentry{module}, \hyperpage{3}
+  \item \spxentry{todo.views}
+    \subitem \spxentry{module}, \hyperpage{3}
+  \item \spxentry{TodoConfig}\spxextra{class in todo.apps}, \hyperpage{2}
+  \item \spxentry{todolist}
+    \subitem \spxentry{module}, \hyperpage{6}
+  \item \spxentry{todolist.asgi}
+    \subitem \spxentry{module}, \hyperpage{5}
+  \item \spxentry{todolist.settings}
+    \subitem \spxentry{module}, \hyperpage{5}
+  \item \spxentry{todolist.urls}
+    \subitem \spxentry{module}, \hyperpage{5}
+  \item \spxentry{todolist.wsgi}
+    \subitem \spxentry{module}, \hyperpage{6}
+
+  \indexspace
+  \bigletter U
+  \item \spxentry{user}\spxextra{todo.models.Task attribute}, \hyperpage{3}
+  \item \spxentry{user\_id}\spxextra{todo.models.Task attribute}, \hyperpage{3}
+
+\end{sphinxtheindex}
