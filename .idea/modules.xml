@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Fallstudie_Calendar.iml" filepath="$PROJECT_DIR$/.idea/Fallstudie_Calendar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/qs_kalender.iml" filepath="$PROJECT_DIR$/.idea/qs_kalender.iml" />
     </modules>
   </component>
 </project>
