@@ -15,6 +15,8 @@ def urlpatterns():
         1. Import the include() function: from django.urls import include, path
         2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
     """
+
+
 pass
 from django.urls import path, include
 from account.views import loginView, registerView, logoutView
