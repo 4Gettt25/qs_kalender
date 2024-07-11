@@ -1,9 +1,7 @@
 from django.urls import path
-from .views import homeView, update_event
+from .views import homeView  # Assuming homeView is defined in the views.py file in the same directory
 
-
-def some_function():
-    """
+'''
     URL configuration for Fallstudie_Calendar project.
 
     The `urlpatterns` list routes URLs to views. For more information please see:
@@ -25,12 +23,9 @@ def some_function():
 
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-    """
-    pass
+ '''
 
-
+# URL patterns for the application
 urlpatterns = [
     path('home', homeView, name='home'),
-    path('update-event/', update_event, name='update-event'),
 ]
-

@@ -1,29 +1,26 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
-
 from mycalendar.forms import CalendarForm, CalendarEditForm, EventCreateForm, EventEditForm
 from mycalendar.models import Calendar
 from mycalendar.serializers import CalendarSerializer, EventSerializer
 from django.db.models import Q
-from django.http import JsonResponse
-from django.views.decorators.csrf import csrf_exempt
-from mycalendar.models import Event
-import json
 
 
+# Function to get events for a specific calendar
 def getEventsForCalender(selected_calendar):
     calendar = Calendar.objects.get(calendar_id=selected_calendar)
     serializedEvents = EventSerializer(calendar.event_set.all(), many=True).data
     return serializedEvents
 
 
+# View for the home page, requires login
 @login_required
 def homeView(request):
     context = {}
     createEventForm = EventCreateForm()
     editEventForm = EventEditForm()
 
-    # Events stuff
+    # Check if a specific calendar is selected
     if "selected_calendar" in request.GET:
         selected_calendar = request.GET["selected_calendar"]
         firstCalendar = True
@@ -32,6 +29,7 @@ def homeView(request):
         if firstCalendar:
             selected_calendar = firstCalendar.calendar_id
 
+    # Handle POST requests for creating, editing, deleting calendars and events
     if request.POST:
         if request.POST['action'] == 'create':
             form = CalendarForm(request.POST)
@@ -69,7 +67,7 @@ def homeView(request):
             else:
                 editEventForm = form
 
-    # calendar stuff
+    # Fetch and serialize calendars for the user
     queryset_visible = Calendar.objects.filter(Q(owner=request.user.pk) | Q(visible_for=request.user))
     queryset_editable = Calendar.objects.filter(Q(owner=request.user.pk) | Q(editable_by=request.user))
     context["calendars"] = CalendarSerializer(queryset_editable, many=True).data
@@ -78,30 +76,12 @@ def homeView(request):
     context["editform"] = CalendarEditForm(initial={"user_id": request.user.pk, "owner": request.user})
     context["my_calendars"] = queryset_visible
 
+    # Fetch and serialize events for the selected calendar
     if firstCalendar:
         context["events"] = getEventsForCalender(selected_calendar)
         context["selected_calendar"] = int(selected_calendar)
     context["event_createform"] = createEventForm
     context["event_editform"] = editEventForm
 
+    # Render the home page with the context
     return render(request, "home.html", context)
-
-
-@csrf_exempt
-def update_event(request):
-    if request.method == 'POST':
-        data = json.loads(request.body)
-        event_id = data.get('event_id')
-        start = data.get('start')
-        end = data.get('end')
-
-        try:
-            event = Event.objects.get(event_id=event_id)
-            event.start_date = start
-            event.end_date = end
-            event.save()
-            return JsonResponse({'status': 'success'})
-        except Event.DoesNotExist:
-            return JsonResponse({'status': 'error', 'message': 'Event not found'}, status=404)
-
-    return JsonResponse({'status': 'error', 'message': 'Invalid request'}, status=400)

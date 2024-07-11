@@ -2,8 +2,7 @@ from django.db import models
 from account.models import Account
 
 
-# Create your models here.
-
+# Calendar model to represent calendar instances
 class Calendar(models.Model):
     calendar_id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=255)
@@ -15,6 +14,7 @@ class Calendar(models.Model):
         return self.name
 
 
+# Event model to represent event instances
 class Event(models.Model):
     TYPE_CHOICES = [
         ("AR", 'Arbeit'),
