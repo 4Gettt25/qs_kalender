@@ -4,7 +4,9 @@ from django.test import TestCase
 
 import os
 
+
 def get_current_venv():
     return os.environ.get('VIRTUAL_ENV', None)
+
 
 print(get_current_venv())

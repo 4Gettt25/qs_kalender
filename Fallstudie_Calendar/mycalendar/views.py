@@ -5,6 +5,10 @@ from mycalendar.forms import CalendarForm, CalendarEditForm, EventCreateForm, Ev
 from mycalendar.models import Calendar
 from mycalendar.serializers import CalendarSerializer, EventSerializer
 from django.db.models import Q
+from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
+from mycalendar.models import Event
+import json
 
 
 def getEventsForCalender(selected_calendar):
@@ -81,3 +85,23 @@ def homeView(request):
     context["event_editform"] = editEventForm
 
     return render(request, "home.html", context)
+
+
+@csrf_exempt
+def update_event(request):
+    if request.method == 'POST':
+        data = json.loads(request.body)
+        event_id = data.get('event_id')
+        start = data.get('start')
+        end = data.get('end')
+
+        try:
+            event = Event.objects.get(event_id=event_id)
+            event.start_date = start
+            event.end_date = end
+            event.save()
+            return JsonResponse({'status': 'success'})
+        except Event.DoesNotExist:
+            return JsonResponse({'status': 'error', 'message': 'Event not found'}, status=404)
+
+    return JsonResponse({'status': 'error', 'message': 'Invalid request'}, status=400)

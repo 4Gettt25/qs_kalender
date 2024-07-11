@@ -1,25 +1,25 @@
-{% extends 'base.html' %} {% load widget_tweaks %} {% block content %}
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+{% block content %}
 <style>
     td {
         border-style: none;
     }
 
-    /* The side navigation menu */
     .sidenav {
-        height: 100%; /* 100% Full-height */
-        width: 0; /* 0 width - change this with JavaScript */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Stay on top */
-        top: 0; /* Stay at the top */
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
         right: 0;
-        background-color: gray; /* Black*/
-        overflow-x: hidden; /* Disable horizontal scroll */
-        padding-top: 60px; /* Place content 60px from the top */
-        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+        background-color: gray;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
     }
 
-    /* The navigation menu links */
-    .sidenav a {
+    .sidenav a, .sidenav h2 {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
         font-size: 18px;
@@ -28,20 +28,10 @@
         transition: 0.3s;
     }
 
-    .sidenav h2 {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        color: white;
-        display: block;
-        transition: 0.3s;
-    }
-
-    /* When you mouse over the navigation links, change their color */
     .sidenav a:hover {
         font-size: 24px;
     }
 
-    /* Position and style the close button (top right corner) */
     .sidenav .closebtn {
         position: absolute;
         top: 0;
@@ -50,7 +40,6 @@
         margin-left: 50px;
     }
 
-    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
     @media screen and (max-height: 450px) {
         .sidenav {
             padding-top: 15px;
@@ -65,6 +54,7 @@
         margin-right: 4px;
     }
 </style>
+
 <div class="container-fluid">
     <div class="row">
         <div id="calendar" class="d-none d-md-flex col-md-4 col-lg-8 p-3"></div>
@@ -260,117 +250,117 @@
 
 {{ calendars|json_script:"calendar_data" }}{{ events|json_script:"events" }}
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // Initialize calendar
-        var calendarEl = document.getElementById("calendar");
-        events = JSON.parse(document.getElementById("events").textContent);
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-            themeSystem: "bootstrap",
-            locale: "de",
-            firstDay: 1,
-            height: "100",
-            initialView: "dayGridMonth",
-            weekNumbers: true,
-            eventSources: [
-                // your event source
-                {
-                    events: events
-                },
-            ],
-            eventContent: function (args, createElement) {
-                const icon = args.event._def.extendedProps.icon;
-                const timeString = convertDatetimeForDisplay(args.event._instance.range.start);
-                const title = args.event._def.title;
-                return {
-                    html: "<i class='fa fa-" + icon + "'></i><div class='fc-event-time'>" + timeString + "</div> <div class='fc-event-title' data-toggle='tooltip' title='" + title + "'>" + title + "</div>",
-                };
+document.addEventListener("DOMContentLoaded", function () {
+    // Initialize calendar
+    var calendarEl = document.getElementById("calendar");
+    var events = JSON.parse(document.getElementById("events").textContent);
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+        themeSystem: "bootstrap",
+        locale: "de",
+        firstDay: 1,
+        height: "auto",
+        initialView: "dayGridMonth",
+        weekNumbers: true,
+        editable: true,  // Enable drag-and-drop
+        droppable: true, // Allow events to be dropped
+        eventSources: [
+            {
+                events: events
             },
-            eventClick: function (info) {
-                console.log(info.event);
-                edit_event_name = document.getElementById("id_name_edit_event");
-                edit_event_start = document.getElementById("id_edit_start_date");
-                edit_event_end = document.getElementById("id_edit_end_date");
-                edit_event_type = document.getElementById("id_edit_event_type");
-                edit_event_id= document.getElementById("id_event_id");
-                edit_event_id.value = info.event._def.extendedProps.event_id;
-                edit_event_name.value = info.event.title;
-                edit_event_start.value = convertDatetimeForEdit(info.event.start);
-                if(info.event.end != null)
-                    edit_event_end.value = convertDatetimeForEdit(info.event.end);
-                edit_event_type.value = info.event._def.extendedProps.event_type;
+        ],
+        eventContent: function (args) {
+            const icon = args.event.extendedProps.icon;
+            const timeString = convertDatetimeForDisplay(args.event.start);
+            const title = args.event.title;
+            return {
+                html: "<i class='fa fa-" + icon + "'></i><div class='fc-event-time'>" + timeString + "</div><div class='fc-event-title' data-toggle='tooltip' title='" + title + "'>" + title + "</div>",
+            };
+        },
+        eventClick: function (info) {
+            edit_event_name = document.getElementById("id_name_edit_event");
+            edit_event_start = document.getElementById("id_edit_start_date");
+            edit_event_end = document.getElementById("id_edit_end_date");
+            edit_event_type = document.getElementById("id_edit_event_type");
+            edit_event_id = document.getElementById("id_event_id");
+            edit_event_id.value = info.event.extendedProps.event_id;
+            edit_event_name.value = info.event.title;
+            edit_event_start.value = convertDatetimeForEdit(info.event.start);
+            if(info.event.end != null) {
+                edit_event_end.value = convertDatetimeForEdit(info.event.end);
+            }
+            edit_event_type.value = info.event.extendedProps.event_type;
 
-
-                $("#eventEditModal").modal("show");
-            },
-        });
-        calendar.render();
-
-        // Calendar edit form
-        calendars = JSON.parse(document.getElementById("calendar_data").textContent);
-        input_calendars = document.getElementById("id_calendars");
-        input_name = document.getElementById("id_name");
-        input_visible_for = document.getElementById("id_visible_for");
-        input_editable_by = document.getElementById("id_editable_by");
-        input_calendar_id = document.getElementById("id_calendar_id");
-
-        if (calendars.length > 0) {
-            calendarChanged();
-        } else {
-            deactivateInputs();
+            $("#eventEditModal").modal("show");
+        },
+        eventDrop: function(info) {
+            // Handle event drop (drag and drop)
+            updateEvent(info.event);
+        },
+        eventResize: function(info) {
+            // Handle event resize
+            updateEvent(info.event);
         }
     });
+    calendar.render();
 
-    function deactivateInputs() {
-        document.getElementById("editcalendar-tab").classList.add("disabled");
-    }
-
-    function calendarChanged() {
-        calendars.forEach((element) => {
-            if (parseInt(element.calendar_id) === parseInt(input_calendars.value)) {
-                input_name.value = element.name;
-                input_visible_for.value = element.visible_for;
-                input_editable_by.value = element.editable_by;
-                input_calendar_id.value = element.calendar_id;
+    function updateEvent(event) {
+        const csrfToken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+        fetch('/update-event/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': csrfToken,
+            },
+            body: JSON.stringify({
+                event_id: event.extendedProps.event_id,
+                start: event.start.toISOString(),
+                end: event.end ? event.end.toISOString() : null,
+            })
+        }).then(response => {
+            if (!response.ok) {
+                console.error('Event update failed');
             }
         });
     }
 
-    /* Set the width of the side navigation to 250px */
-    function openNav() {
-        container = document.getElementById("containerForSlideMenu").getBoundingClientRect();
-        slider = document.getElementById("mySidenav");
-        slider.style.width = container.width + "px";
+    function convertDatetimeForEdit(startTime) {
+        let timeString = startTime.getDate() + "." + (startTime.getMonth() + 1) + "." + startTime.getFullYear() + " ";
+        timeString += startTime.getHours() + ":" + (startTime.getMinutes() < 10 ? "0" + startTime.getMinutes() : startTime.getMinutes());
+        return timeString;
     }
 
-    /* Set the width of the side navigation to 0 */
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
+    function convertDatetimeForDisplay(startTime) {
+        let timeString = startTime.getUTCHours() + ":" + (startTime.getMinutes() < 10 ? "0" + startTime.getMinutes() : startTime.getMinutes());
+        return timeString;
     }
+});
 
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-        $('[data-toggle="popover"]').popover();
+function openNav() {
+    const container = document.getElementById("containerForSlideMenu").getBoundingClientRect();
+    const slider = document.getElementById("mySidenav");
+    slider.style.width = container.width + "px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+function calendarChanged() {
+    const calendars = JSON.parse(document.getElementById("calendar_data").textContent);
+    const input_calendars = document.getElementById("id_calendars");
+    const input_name = document.getElementById("id_name");
+    const input_visible_for = document.getElementById("id_visible_for");
+    const input_editable_by = document.getElementById("id_editable_by");
+    const input_calendar_id = document.getElementById("id_calendar_id");
+
+    calendars.forEach((element) => {
+        if (parseInt(element.calendar_id) === parseInt(input_calendars.value)) {
+            input_name.value = element.name;
+            input_visible_for.value = element.visible_for;
+            input_editable_by.value = element.editable_by;
+            input_calendar_id.value = element.calendar_id;
+        }
     });
-
-    function convertDatetimeForEdit(startTime){
-        let timeString = startTime.getDate() + "." + (startTime.getMonth()+1) + "." + startTime.getFullYear() + " ";
-        timeString += startTime.getHours() + ":";
-        if (startTime.getMinutes() < 9) {
-            timeString += "0" + startTime.getMinutes();
-        } else {
-            timeString += startTime.getMinutes();
-        }
-        return timeString;
-    }
-
-    function convertDatetimeForDisplay(startTime){
-        let timeString = startTime.getUTCHours() + ":";
-        if (startTime.getMinutes() < 9) {
-            timeString += "0" + startTime.getMinutes();
-        } else {
-            timeString += startTime.getMinutes();
-        }
-        return timeString;
-    }
+}
 </script>
 {% endblock content %}

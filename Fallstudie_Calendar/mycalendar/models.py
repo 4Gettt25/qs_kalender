@@ -19,6 +19,12 @@ class Event(models.Model):
     TYPE_CHOICES = [
         ("AR", 'Arbeit'),
         ("FR", 'Freizeit'),
+        ("PR", 'Privat'),
+        ("GE", 'Geburtstag'),
+        ("FE", 'Feiertag'),
+        ("UR", 'Urlaub'),
+        ("TE", 'Termin'),
+        ("SO", 'Sonstiges'),
     ]
     event_id = models.AutoField(primary_key=True)
     calendar = models.ForeignKey(Calendar, on_delete=models.CASCADE)
