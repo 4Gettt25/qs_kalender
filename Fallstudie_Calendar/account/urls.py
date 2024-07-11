@@ -18,11 +18,11 @@ def urlpatterns():
 
 
 pass
-from django.urls import path, include
-from account.views import loginView, registerView, logoutView
+from django.urls import path
+from .views import registerView, logoutView, loginView
 
 urlpatterns = [
-    path('', loginView, name='login'),
     path('register/', registerView, name='register'),
     path('logout/', logoutView, name='logout'),
+    path('login/', loginView, name='login'),
 ]

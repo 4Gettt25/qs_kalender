@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from mycalendar.models import Calendar, Event
+from .models import Calendar, Event
 
 
 class CalendarSerializer(serializers.ModelSerializer):
@@ -14,7 +14,10 @@ class CalendarSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Calendar
-        exclude = ("owner",)
+        fields = ['id', 'name', 'owner', 'visible_for', 'editable_by']
+
+    def create(self, validated_data):
+        return Calendar.objects.create(**validated_data)
 
 class EventSerializer(serializers.ModelSerializer):
 
@@ -41,3 +44,6 @@ class EventSerializer(serializers.ModelSerializer):
     class Meta:
         model = Event
         fields = ("title","start","end","icon","event_id","event_type")
+
+    def create(self, validated_data):
+        return Event.objects.create(**validated_data)

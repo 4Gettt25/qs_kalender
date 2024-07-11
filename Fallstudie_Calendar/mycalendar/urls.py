@@ -25,8 +25,12 @@ def some_function():
     pass
 
 from django.urls import path
-from .views import homeView  # Assuming homeView is defined in the views.py file in the same directory
+from . import views
 
 urlpatterns = [
-    path('home', homeView, name='home'),
+    path('calendar/create/', views.CalendarCreateView.as_view(), name='calendar_create'),
+    path('calendar/delete/<int:pk>/', views.CalendarDeleteView.as_view(), name='calendar_delete'),
+    path('calendar/', views.CalendarListView.as_view(), name='calendar_list'),
+    path('event/create/', views.EventCreateView.as_view(), name='event_create'),
+    path('event/delete/<int:pk>/', views.EventDeleteView.as_view(), name='event_delete'),
 ]

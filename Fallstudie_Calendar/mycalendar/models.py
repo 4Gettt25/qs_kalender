@@ -1,4 +1,5 @@
 from django.db import models
+
 from account.models import Account
 
 
@@ -16,6 +17,7 @@ class Calendar(models.Model):
 
 
 class Event(models.Model):
+    objects = None
     TYPE_CHOICES = [
         ("AR", 'Arbeit'),
         ("FR", 'Freizeit'),

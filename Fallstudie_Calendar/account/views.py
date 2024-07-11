@@ -1,6 +1,7 @@
 from django.contrib.auth import logout, login, authenticate
 from django.shortcuts import render, redirect
 from account.forms import RegistrationForm, AccountAuthenticationForm
+from django.views.generic import TemplateView
 
 # Create your views here.
 
@@ -36,3 +37,9 @@ def registerView(request):
         form = RegistrationForm()
     context['form'] = form
     return render(request, "registrieren.html", context)
+
+def home(request):
+    return render(request, 'account/home.html')
+
+class HomeView(TemplateView):
+    template_name = 'home.html'

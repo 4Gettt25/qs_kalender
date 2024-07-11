@@ -28,11 +28,15 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 from Fallstudie_Calendar import settings
+from account import views as account_views
+
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('account.urls')),
-    path('', include('mycalendar.urls')),
+    path('account/', include('account.urls')),
+    path('mycalendar/', include('mycalendar.urls')),
+    path('', account_views.home, name='home'),  # Hier die home-Ansicht hinzufügen
 ]
 
 if settings.DEBUG:

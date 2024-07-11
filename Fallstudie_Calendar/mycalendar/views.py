@@ -6,6 +6,9 @@ from mycalendar.models import Calendar
 from mycalendar.serializers import CalendarSerializer, EventSerializer
 from django.db.models import Q
 
+from django.views.generic import ListView, CreateView, DeleteView
+from .models import Calendar, Event
+from django.urls import reverse_lazy
 
 def getEventsForCalender(selected_calendar):
     calendar = Calendar.objects.get(calendar_id=selected_calendar)
@@ -81,3 +84,29 @@ def homeView(request):
     context["event_editform"] = editEventForm
 
     return render(request, "home.html", context)
+
+class CalendarListView(ListView):
+    model = Calendar
+    template_name = 'calendar_list.html'
+
+class CalendarCreateView(CreateView):
+    model = Calendar
+    fields = ['name', 'owner']
+    template_name = 'calendar_form.html'
+    success_url = reverse_lazy('calendar_list')
+
+class CalendarDeleteView(DeleteView):
+    model = Calendar
+    template_name = 'calendar_confirm_delete.html'
+    success_url = reverse_lazy('calendar_list')
+
+class EventCreateView(CreateView):
+    model = Event
+    fields = ['name', 'calendar', 'start_date', 'end_date']
+    template_name = 'event_form.html'
+    success_url = reverse_lazy('calendar_list')
+
+class EventDeleteView(DeleteView):
+    model = Event
+    template_name = 'event_confirm_delete.html'
+    success_url = reverse_lazy('calendar_list')
